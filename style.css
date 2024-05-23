@@ -3,6 +3,7 @@
 }
 body{
   background-color: #463077;
+  max-width: 100%;
 }
 h1{
   font-family: "forma-djr-micro", sans-serif;
@@ -278,6 +279,7 @@ nav a:hover::after {
 #resources-one, #resources-two {
   padding:3%;
   justify-content: center;
+  max-width: 100%;
 }
 #heading-one-left{
   text-align: left;
@@ -300,13 +302,9 @@ li a, li{
   font-weight: 300;
   font-style: normal;
   color: #ffffff;
-  text-decoration: none;
-}
-li a {
+  text-decoration: none; 
   display: inline-block;
   position: relative;
-  text-decoration: none;
-  color: #ffffff;
 }
 li a::after {
   content: '';
@@ -320,10 +318,12 @@ li a::after {
   background: currentcolor;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+  color: #ffffff;
 }
 li a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+  color: #ffffff;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
