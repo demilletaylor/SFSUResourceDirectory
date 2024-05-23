@@ -68,7 +68,7 @@ p{
 }
 
 .fa fa-bars , i{
-  font-size: 20em;
+  font-size: 200px;
   text-decoration: none;
   padding-left: 2%;
   padding-top: 2%;
@@ -76,6 +76,7 @@ p{
   display: inline-block;
   text-decoration: none;
   color: #e9d597;
+  z-index: 100;
 }
 
 
@@ -138,14 +139,8 @@ p{
   text-decoration: none;
   padding: 5%;
 }
-#table a{
-  color: white;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-}
 
-#table a::after{
+#table a::after, #table-two a::after{
   content: '';
   position: absolute;
   width: 100%;
@@ -159,7 +154,7 @@ p{
   transition: transform 0.25s ease-out;
   align-items: center;
 }
-#table a:hover::after {
+#table a:hover::after, #table-two a:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }                      
@@ -180,9 +175,12 @@ p{
   padding: 5%;
   max-height:100%;
   max-width:100%;
-  background-size: cover;
+  position: relative;  /* Ensure the container is positioned relative for the pseudo-element */
+  background-image: url('img/campus.jpeg');  /* Replace with your image URL */
+  background-size: cover;  /* Make sure the image covers the entire container */
+  background-position: center;  /* Center the background image */
   background-repeat: no-repeat;
-  background-color: #463077;
+  overflow: hidden;  /* Hide any overflow */
 }
 #background-img{
   max-height:100%;
@@ -194,8 +192,35 @@ p{
   color: #e9d597;
   text-align: center;
 }
+#overlay{
+    background: #463077 0.4;
+    position: absolute;
+    background-image: url(img/campus.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(70,48,119,0.7);
+
+
+}
+
+.directory:before {
+  content: '';
+  position: absolute;  /* Position absolutely to cover the container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(35,17,97,0.9);  /* Semi-transparent overlay color */
+  z-index: 1;  /* Place the overlay above the background image */
+}
+
+.directory > * {
+  position: relative;  /* Ensure content is above the overlay */
+  z-index: 2;
+  color: white;  /* Text color for visibility */
+}
+
 #table-two{
-  background-color: #463077;
   padding: 5%;
   max-width: 100%;
   display: grid;
@@ -212,19 +237,7 @@ p{
   position: relative;
   text-decoration: none;
 }
-#table-two a:hover{
-  transition: transform all 0.25s ease-out;
-  color:#e9d597;
-  background-color: #231161;
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-#table-two a:hover::after {
-  color:#e9d597;
-  background-color: #231161;
-  transform: scaleX(1);
-  transform-origin: bottom right;
-}
+
 
 /* "POP-UP" Navigation.html styling */
 .nav-body {
@@ -305,6 +318,7 @@ li a, li{
   text-decoration: none; 
   display: inline-block;
   position: relative;
+  list-style-type: decimal;
 }
 li a::after {
   content: '';
