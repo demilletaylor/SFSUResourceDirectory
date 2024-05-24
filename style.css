@@ -4,13 +4,13 @@
 body{
   background-color: #463077;
   max-width: 100%;
+  color: #ffffff;
 }
 h1{
   font-family: "forma-djr-micro", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 5em;
-  color: #ffffff;
 }
 h2{
   font-family: "forma-djr-micro", sans-serif;
@@ -68,7 +68,7 @@ p{
 }
 
 .fa fa-bars, i{
-  font-size: 200px;
+  font-size: 20em
   text-decoration: none;
   padding-left: 2%;
   padding-top: 2%;
@@ -182,12 +182,7 @@ p{
   background-repeat: no-repeat;
   overflow: hidden;  /* Hide any overflow */
 }
-#background-img{
-  max-height:100%;
-  max-width:100%;
-  background-size: cover;
-  background-repeat: no-repeat;  
-}
+
 #mainheading{
   color: #e9d597;
   text-align: center;
@@ -283,6 +278,7 @@ nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 #resources-one{
   background-color: #604c11;
 }
@@ -294,41 +290,43 @@ nav a:hover::after {
   justify-content: center;
   max-width: 100%;
 }
-#heading-one-left{
+#heading-left{
   text-align: left;
   color: #ffffff;
+  padding-bottom: 3%;
 }
-#heading-two-right{
+#heading-right{
   text-align: right;
   color: #ffffff;
+  padding-bottom: 3%;
 }
 #food-grid{
   display: flex;
-  
-
+}
+#info{
+  flex: 50%;
+  padding: 5%;
 }
 .rd-image{
-  width: 50%;
+  max-width: 50%;
+  object-fit: scale-down;
 }
+
 li{
   font-family: "Lexend", sans-serif;
-  font-size:1.5em;
+  font-size:2em;
   font-weight: 300;
   font-style: normal;
   color: #ffffff;
-  display: inline-block;
   position: relative;
-  list-style-type: decimal;
+  list-style-type:circle;
 }
 li a{
   font-family: "Lexend", sans-serif;
-  font-size:1.5em;
   font-weight: 300;
   font-style: normal;
   color: #ffffff;
   text-decoration: none; 
-
-  display: inline-block;
   position: relative;
 }
 li a::after {

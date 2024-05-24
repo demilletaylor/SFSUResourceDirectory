@@ -17,29 +17,43 @@
   <header>
     <div class="topnav">
              <a href="navigation.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
-      </div>
+            
     </header>
   <section id="resources-one">
-    <h2 id =heading-one-left> Heading One Left</h2>
+    <a href="index.html"><img src="img/SFState_Official Logo.png" class="resourceslogo"></a>
+  </div>
+    <h1 id =heading-left> Food Insecurity</h1>
       <div id="food-grid">   
-        <ul>
-          <li> <a href="https://linktr.ee/asfoodpantry">Reserve a Spot with Gator Groceries</a></li>
-          <li><a href="https://asi.sfsu.edu/gator-groceries">View Food Pantry Hours</a></li>
-          <li><a href="https://benefitscal.com/Help/program/calfresh/HCPDE?lang=en">Apply for CalFresh</a></li>
-        </ul>
+        <div id="info"> 
+        <h3> AS Food Pantry </h3>
+           <ul> 
+             <li><a href="https://asi.sfsu.edu/gator-groceries">View Food Pantry Hours</a></li>
+           </ul>
+          <h3> Gator Groceries </h3>
+                 <ul>
+                   <li> <a href="https://linktr.ee/asfoodpantry">Reserve a Spot with Gator Groceries</a></li>
+                   <li> <a href="https://benefitscal.com/Help/program/calfresh/HCPDE?lang=en">Apply for CalFresh</a></li>
+                      </ul>
+         </div>
         <img src="img/groceries.jpeg" class="rd-image" alt="">
-        </div>
+      </div>
       </section>
       <section id="resources-two">
-        <h1 id =heading-two-right> Heading Two Right</h1>
-        <div id="food-grid"> 
+        <h1 id =heading-right> Health & Wellness</h1>
+        <div id="food-grid">   
           <img src="img/groceries.jpeg" class="rd-image" alt="">
-          <ul>
-            <li>Reserve a Spot with Gator Groceries</li>
-            <li>Food Pantry</li>
-            <li>Apply for Calfresh</li>
-          </ul>
-          </div>
+          <div id="info"> 
+          <h3> AS Food Pantry </h3>
+             <ul> 
+               <li><a href="https://asi.sfsu.edu/gator-groceries">View Food Pantry Hours</a></li>
+             </ul>
+            <h3> Gator Groceries </h3>
+                   <ul>
+                     <li> <a href="https://linktr.ee/asfoodpantry">Reserve a Spot with Gator Groceries</a></li>
+                     <li> <a href="https://benefitscal.com/Help/program/calfresh/HCPDE?lang=en">Apply for CalFresh</a></li>
+                        </ul>
+           </div>
+        </div>
         </section>
 </body>
 
