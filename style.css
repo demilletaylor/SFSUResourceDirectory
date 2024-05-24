@@ -67,7 +67,7 @@ p{
   padding-left: 5%;
 }
 
-.fa fa-bars , i{
+.fa fa-bars, i{
   font-size: 200px;
   text-decoration: none;
   padding-left: 2%;
@@ -296,29 +296,40 @@ nav a:hover::after {
 }
 #heading-one-left{
   text-align: left;
+  color: #ffffff;
 }
 #heading-two-right{
   text-align: right;
+  color: #ffffff;
 }
 #food-grid{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 5%;
+  display: flex;
+  
 
 }
 .rd-image{
   width: 50%;
 }
-li a, li{
+li{
+  font-family: "Lexend", sans-serif;
+  font-size:1.5em;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  list-style-type: decimal;
+}
+li a{
   font-family: "Lexend", sans-serif;
   font-size:1.5em;
   font-weight: 300;
   font-style: normal;
   color: #ffffff;
   text-decoration: none; 
+
   display: inline-block;
   position: relative;
-  list-style-type: decimal;
 }
 li a::after {
   content: '';
@@ -333,11 +344,13 @@ li a::after {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
   color: #ffffff;
+  list-style-type: decimal;
 }
 li a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
   color: #ffffff;
+  list-style-type: decimal;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
